@@ -1,0 +1,287 @@
+body {
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  letter-spacing: normal;
+  font-weight: 700;
+}
+
+/*BODY QUERIES*/
+@media only screen and (max-width:240px) {
+  * {
+    display: none;
+  }
+}
+
+/*TOPBAR*/
+.topbar {
+  height: 40px;
+  background-color: #F4F4F4;
+}
+
+#myBtn {
+  background-color: #F4F4F4;
+  border: none;
+  color: #B2B2B2;
+  padding: 11px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.language {
+  position: absolute;
+  display: inline-block;
+  right: 2%
+}
+
+.language a {
+  padding: 8px;
+  line-height: 40px;
+  color: #B2B2B2;
+  text-decoration: none;
+}
+
+/*TOPBAR - MEDIA QUERIES*/
+/*REGIONS*/
+.regions {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.regions-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  height: 680px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#verticalLine {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 1px;
+  height: 100%;
+  background-color: #B2B2B2;
+}
+
+#horizontalLine {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 0;
+  height: 1px;
+  width: 100%;
+  background-color: #B2B2B2;
+}
+
+#bosniapic {
+  position: absolute;
+  left: 2%;
+  top: 6%;
+}
+
+#serbiapic {
+  position: absolute;
+  right: 2%;
+  top: 6%;
+}
+
+#montenegropic {
+  position: absolute;
+  right: 2%;
+  top: 400px;
+}
+
+#croatiapic {
+  position: absolute;
+  left: 2%;
+  top: 400px;
+}
+
+/*REGIONS - MEDIA QUERIES*/
+/*MAINBAR*/
+ul#horiznav, #horiznav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  height: 50px;
+}
+
+#horiznav li {
+  float: left;
+  width: 20%;
+  position: relative
+}
+
+#horiznav li a {
+  display: block;
+  width: 100%;
+  line-height: 50px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  background-color: #4CAF50;
+}
+
+#horiznav li a:hover {
+  color: #333333;
+  background-color: #87c24f;
+}
+
+#horiznav li:hover ul {
+  display: block
+}
+
+#submenu {
+  display: none;
+  position: relative;
+  width: 100%;
+}
+
+#submenu li {
+  width: 100%;
+}
+
+#submenu li a {
+  padding: 0;
+  border: 0px 0px 0px 1px white;
+}
+
+#hr hr {
+  background-color: #4CAF50;
+  border: 1px black;
+  padding: 0px;
+  margin: 0px;
+  height: 5px;
+}
+
+.hamicon {
+  position: absolute;
+  display: none;
+  top: 60px;
+  right: 20px;
+  font-size: 40px;
+  color: #4CAF50;
+  background-color: white;
+  border: 0;
+}
+
+
+/*MAINBAR - MEDIA QUERIES*/
+@media only screen and (max-width:1000px) {
+  #horiznav {
+    display: none;
+  }
+
+  .hamicon {
+    display: block;
+  }
+
+  body {
+    background-color: #F4F4F4
+  }
+
+  .logo {
+    background-color: white;
+  }
+}
+
+/*MENU MODAL*/
+.menuModal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);/
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.menuicons i{
+  font-size: 100px;
+  width:100px;
+}
+.menuicon{
+  left:20px;
+}
+.menutext{
+  margin-top: -50px;
+  display: inline-block;
+  font-size: 20px;
+  color: #4CAF50;
+  vertical-align: middle;
+}
+/*MENU MODAL - MEDIA QUERIES*/
+@media only screen and (max-width:400px) {
+  .menutext{
+    width:170px;
+  }
+}
+@media only screen and (max-width:350px) {
+  .menutext{
+    width:140px;
+  }
+}
+@media only screen and (max-width:310px) {
+  .menutext{
+    width:120px;
+  }
+}
+@media only screen and (max-width:285px) {
+  .menutext{
+    width:80px;
+    font-size: 16px;
+  }
+}
