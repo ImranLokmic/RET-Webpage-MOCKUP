@@ -1,10 +1,14 @@
 <html>
 
 <head>
+
+  <link rel="stylesheet" href="css/static.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="scripts\static.js"></script>
+
 </head>
-<link rel="stylesheet" href="css/static.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
 <body>
 
@@ -21,10 +25,9 @@
   </div>
   <!--Regions-->
   <div id="myModal" class="regions">
-
+    <span class="close">&times;</span>
     <!-- Modal content -->
     <div class="regions-content">
-      <span class="close">&times;</span>
       <div id="verticalLine"></div>
       <div id="horizontalLine"></div>
       <div id="bosniapic">
@@ -33,11 +36,11 @@
       <div id="serbiapic">
         <img src="pageimg/serbiare.png">
       </div>
-      <div id="montenegropic">
-        <img src="pageimg/montenegrore.png">
-      </div>
       <div id="croatiapic">
         <img src="pageimg/croatiare.png">
+      </div>
+      <div id="montenegropic">
+        <img src="pageimg/montenegrore.png">
       </div>
     </div>
 
@@ -81,7 +84,7 @@
       <span class="closeMenu">&times;</span>
       <div class="menuicons">
         <div class="menuicon">
-          <a href="kvalitet.html"><i style="color:red" class="fa fa-medkit" aria-hidden="true"></i></a>
+          <a href="zdravstveneindikacije.html"><i style="color:red" class="fa fa-medkit" aria-hidden="true"></i></a>
           <div class="menutext">
             <p>Zdravstvene indikacije</p>
           </div>
@@ -124,38 +127,7 @@
 
 
 
-  <script>
-    //Region Modal Menu functions
-    var modal = document.getElementById("myModal");
-    var btn = document.getElementById("myBtn");
-    var span = document.getElementsByClassName("close")[0];
-    btn.onclick = function() {
-      modal.style.display = "block";
-    }
-    span.onclick = function() {
-      modal.style.display = "none";
-    }
-    window.onclick = function(event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
-      }
-    }
-    //Main menu Modal functions
-    var modalMenu = document.getElementById("hamModal");
-    var btnMenu = document.getElementById("hamBtn");
-    var spanMenu = document.getElementsByClassName("closeMenu")[0];
-    btnMenu.onclick = function() {
-      modalMenu.style.display = "block";
-    }
-    spanMenu.onclick = function() {
-      modalMenu.style.display = "none";
-    }
-    window.onclick = function(event) {
-      if (event.target == modalMenu) {
-        modalMenu.style.display = "none";
-      }
-    }
-  </script>
-</body>
 
+</body>
+<script type="text/javascript" src="scripts\static.js"></script>
 </html>
