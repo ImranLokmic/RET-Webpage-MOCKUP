@@ -28,3 +28,14 @@ window.onclick = function(event) {
     modalMenu.style.display = "none";
   }
 }
+var subone = document.getElementsByClassName("submenutextone")[0];
+var subtwo = document.getElementsByClassName("submenutexttwo")[0];
+function submenuone() {
+  subone.style.display = "inline-block";
+  subtwo.style.display = "none";
+}
+
+function submenutwo() {
+  subone.style.display = "none";
+  subtwo.style.display = "inline-block";
+}

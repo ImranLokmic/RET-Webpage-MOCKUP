@@ -314,7 +314,7 @@ ul#horiznav, #horiznav ul {
 
 #submenu {
   display: none;
-  position: relative;
+  position: absolute;
   width: 100%;
 }
 
@@ -416,6 +416,20 @@ ul#horiznav, #horiznav ul {
   font-size: 20px;
   color: #4CAF50;
   vertical-align: middle;
+}
+
+.submenutextone, .submenutexttwo  {
+  margin-top: -50px;
+  margin-left: 10px;
+  display: none;
+  font-size: 20px;
+  color: #4CAF50;
+  vertical-align: middle;
+  text-decoration: none;
+  list-style: none;
+}
+.submenutextone, .submenutexttwo li {
+  color: #4CAF50;
 }
 
 /*MENU MODAL - MEDIA QUERIES*/
