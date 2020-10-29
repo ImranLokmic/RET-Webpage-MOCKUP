@@ -13,6 +13,11 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+
+
+
+
 //Main menu Modal functions
 var modalMenu = document.getElementById("hamModal");
 var btnMenu = document.getElementById("hamBtn");
@@ -28,11 +33,18 @@ window.onclick = function(event) {
     modalMenu.style.display = "none";
   }
 }
+
+
+
+
+
 //SUBMENU VARS
 var submodalone = document.getElementById("subModalOne");
 var submodaltwo = document.getElementById("subModalTwo");
 var subcloseone = document.getElementById("subCloseOne");
 var subclosetwo = document.getElementById("subCloseTwo");
+
+
 //SUBMENU ONE TRIGGERS
 function submenuone() {
   submodalone.style.display = "inline-block";

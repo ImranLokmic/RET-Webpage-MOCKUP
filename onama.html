@@ -3,15 +3,17 @@
 <head>
 
   <link rel="stylesheet" href="css/static.css">
-  <link rel="stylesheet" href="css/onama.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script type="text/javascript" src="scripts\static.js"></script>
 
 </head>
 
 
 <body>
+
+
+
+
 
   <!--TopBar-->
   <div class="topbar">
@@ -24,105 +26,191 @@
     </div>
 
   </div>
+
+
+
+
+
   <!--Regions-->
   <div id="myModal" class="regions">
+
     <span class="close">&times;</span>
-    <!-- Modal content -->
+
     <div class="regions-content">
+
       <div id="verticalLine"></div>
+
       <div id="horizontalLine"></div>
+
       <div id="bosniapic">
         <img src="pageimg/bosniare.png">
       </div>
+
       <div id="serbiapic">
         <img src="pageimg/serbiare.png">
       </div>
+
       <div id="croatiapic">
         <img src="pageimg/croatiare.png">
       </div>
+
       <div id="montenegropic">
         <img src="pageimg/montenegrore.png">
       </div>
+
     </div>
 
   </div>
+
   </div>
+
+
+
+
+
   <!--Logo-->
   <div class="logo">
 
     <a href=""><img src="" height="80" width="80"></img></a>
 
   </div>
+
+
+
+
+
   <!--Mainbar-->
   <ul id="horiznav">
+
     <li><a href="zdravstveneindikacije.html">Zdravstvene indikacije</a></li>
+
     <li><a href="#">Lokacije <i style="font-size:16px" class="fa">&#xf107;</i></a>
       <ul id="submenu">
         <li><a href="#">Zenica</a></li>
-        <span id="hr" <li>
-          <hr />
-    </li></span>
-    <li><a href="#">Sarajevo (WIP)</a></li>
+        <li><a href="#">Sarajevo (WIP)</a></li>
+      </ul>
+    </li>
+
+    <li><a href="prognozavremena.html">Prognoza vremena</a></li>
+
+    <li><a href="onama.html">O nama</a></li>
+
+    <li><a href="#">Kvalitet zraka <i style="font-size:16px" class="fa">&#xf107;</i></a>
+      <ul id="submenu">
+        <li><a href="#">Deponije</a></li>
+        <li><a href="#">test (WIP)</a></li>
+      </ul>
+    </li>
+
   </ul>
-  </li>
-  <li><a href="prognozavremena.html">Prognoza vremena</a></li>
-  <li><a href="onama.html">O nama</a></li>
-  <li><a href="#">Kvalitet zraka <i style="font-size:16px" class="fa">&#xf107;</i></a>
-    <ul id="submenu">
-      <li><a href="#">Deponije</a></li>
-      <li><a href="#">test (WIP)</a></li>
-    </ul>
-  </li>
-  </ul>
+
+
+
+
+
+ <!--Hamburger menu modal trigger-->
   <button id="hamBtn" class="hamIcon">
     <i class="fa fa-bars"></i>
   </button>
+
+
+
+
+
   <!--Menu Modal-->
   <div id="hamModal" class="menuModal">
 
-    <!-- Modal content -->
     <div class="modal-content">
+
       <span class="closeMenu">&times;</span>
+
       <div class="menuicons">
+
         <div class="menuicon">
           <a href="zdravstveneindikacije.html"><i style="color:red" class="fa fa-medkit" aria-hidden="true"></i></a>
           <div class="menutext">
             <p>Zdravstvene indikacije</p>
           </div>
         </div>
-        <hr/>
+
+        <hr />
+
         <div class="menuicon">
-          <i style="color:#1da2d8" class="fa fa-globe" aria-hidden="true"></i></a>
+          <i style="color:#1da2d8" class="fa fa-globe" aria-hidden="true" onclick="submenuone()"></i>
           <div class="menutext">
             <p>Regije</p>
           </div>
-
         </div>
-        <hr/>
+
+        <hr />
+
         <div class="menuicon">
           <a href="prognozavremena.html"><i style="color:#F28C38" class="fa fa-sun-o" aria-hidden="true"></i></a>
           <div class="menutext">
             <p>Vremenska prognoza</p>
           </div>
         </div>
-        <hr/>
+
+        <hr />
+
         <div class="menuicon">
           <a href="onama.html"><i style="color:#D2B48C" class="fa fa-book" aria-hidden="true"></i></a>
           <div class="menutext">
             <p>O nama</p>
           </div>
         </div>
-        <hr/>
+
+        <hr />
+
         <div class="menuicon">
-          <i style="color:black" class="fa fa-industry" aria-hidden="true"></i>
+          <i style="color:black" class="fa fa-industry" aria-hidden="true" onclick="submenutwo()"></i>
           <div class="menutext">
             <p>Kvalitet zraka</p>
           </div>
+
         </div>
+
       </div>
+
     </div>
 
   </div>
+
+
+
+
+
+
+  <!--Submenu Modal 1-->
+  <div id="subModalOne" class="submodal">
+
+    <div class="submodal-content">
+      <span id="subCloseOne" class="closesub">&#8249;</span>
+      <p>Zenica</p>
+      <p>Sarajevo</p>
+    </div>
+
+  </div>
+
+
+
+
+
+  <!--Submenu Modal 2-->
+  <div id="subModalTwo" class="submodal">
+
+    <div class="submodal-content">
+      <span id="subCloseTwo" class="closesub">&#8249;</span>
+      <p>Zagadjenje #1</p>
+      <p>Zagadjenje #2</p>
+    </div>
+
+  </div>
+
+
+
+
+  
   <!--Content-->
   <div class="onamameni">
     <i style="color:#a68457" class="fa fa-book" aria-hidden="true"></i>

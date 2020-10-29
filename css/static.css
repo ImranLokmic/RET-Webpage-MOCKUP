@@ -13,6 +13,11 @@ body {
   }
 }
 
+
+
+
+
+
 /*TOPBAR*/
 .topbar {
   height: 40px;
@@ -44,7 +49,13 @@ body {
   text-decoration: none;
 }
 
+
 /*TOPBAR - MEDIA QUERIES*/
+
+
+
+
+
 /*REGIONS*/
 .regions {
   display: none;
@@ -161,6 +172,7 @@ body {
   margin-right: auto;
   display: block;
 }
+
 
 /*REGIONS - MEDIA QUERIES*/
 @media only screen and (max-width:800px) {
@@ -279,6 +291,10 @@ body {
   }
 }
 
+
+
+
+
 /*MAINBAR*/
 ul#horiznav, #horiznav ul {
   margin: 0;
@@ -346,6 +362,7 @@ ul#horiznav, #horiznav ul {
   border: 0;
 }
 
+
 /*MAINBAR - MEDIA QUERIES*/
 @media only screen and (max-width:1000px) {
   #horiznav {
@@ -364,6 +381,11 @@ ul#horiznav, #horiznav ul {
     background-color: white;
   }
 }
+
+
+
+
+
 
 /*MENU MODAL*/
 .menuModal {
@@ -431,6 +453,7 @@ ul#horiznav, #horiznav ul {
   color: #4CAF50;
 }
 
+
 /*MENU MODAL - MEDIA QUERIES*/
 @media only screen and (max-width:400px) {
   .menutext {
@@ -456,6 +479,11 @@ ul#horiznav, #horiznav ul {
     font-size: 16px;
   }
 }
+
+
+
+
+
 /*SUBMENU MODAL*/
 .submodal {
   display: none;
@@ -478,7 +506,6 @@ ul#horiznav, #horiznav ul {
   width: 80%;
 }
 
-/* The Close Button */
 .closesub {
   color: #aaa;
   float: right;
