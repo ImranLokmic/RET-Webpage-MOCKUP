@@ -36,6 +36,11 @@ body {
   font-weight: 700;
 }
 
+#myBtn:hover {
+  background-color: #c3c3c3;
+  color: #ececec;
+}
+
 .language {
   position: absolute;
   display: inline-block;
@@ -47,6 +52,11 @@ body {
   line-height: 40px;
   color: #B2B2B2;
   text-decoration: none;
+}
+
+.language a:hover{
+  background-color: #c3c3c3;
+  color: #ececec;
 }
 
 
@@ -296,6 +306,15 @@ body {
 
 
 /*MAINBAR*/
+#horiznav{
+  box-shadow: 0px 3px 6px rgb(96, 129, 99);
+  background: rgb(76,175,80);
+  background: -moz-linear-gradient(0deg, rgba(76,175,80,1) 0%, rgba(76,175,80,1) 84%, rgba(129,156,129,1) 100%);
+  background: -webkit-linear-gradient(0deg, rgba(76,175,80,1) 0%, rgba(76,175,80,1) 84%, rgba(129,156,129,1) 100%);
+  background: linear-gradient(0deg, rgba(76,175,80,1) 0%, rgba(76,175,80,1) 84%, rgba(129,156,129,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4caf50",endColorstr="#819c81",GradientType=1);
+}
+
 ul#horiznav, #horiznav ul {
   margin: 0;
   padding: 0;
@@ -316,22 +335,25 @@ ul#horiznav, #horiznav ul {
   text-align: center;
   color: white;
   text-decoration: none;
-  background-color: #4CAF50;
 }
 
 #horiznav li a:hover {
-  color: #333333;
-  background-color: #87c24f;
+  color: rgb(76,175,80);
+  background: rgb(87,87,102);
 }
 
-#horiznav li:hover ul {
-  display: block
-}
-
-#submenu {
+#submenu{
   display: none;
   position: absolute;
   width: 100%;
+}
+
+#submenu li{
+  background: rgb(87,87,102);
+}
+
+#horiznav li:hover #submenu {
+ display:block;
 }
 
 #submenu li {
@@ -341,6 +363,11 @@ ul#horiznav, #horiznav ul {
 #submenu li a {
   padding: 0;
   border: 0px 0px 0px 1px white;
+}
+
+#submenu li a:hover #horiznav{
+  color: rgb(76,175,80);
+  background: rgb(87,87,102);
 }
 
 #hr hr {
