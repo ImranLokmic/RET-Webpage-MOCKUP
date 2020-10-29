@@ -28,14 +28,39 @@ window.onclick = function(event) {
     modalMenu.style.display = "none";
   }
 }
-var subone = document.getElementsByClassName("submenutextone")[0];
-var subtwo = document.getElementsByClassName("submenutexttwo")[0];
+//SUBMENU VARS
+var submodalone = document.getElementById("subModalOne");
+var submodaltwo = document.getElementById("subModalTwo");
+var subcloseone = document.getElementById("subCloseOne");
+var subclosetwo = document.getElementById("subCloseTwo");
+//SUBMENU ONE TRIGGERS
 function submenuone() {
-  subone.style.display = "inline-block";
-  subtwo.style.display = "none";
+  submodalone.style.display = "inline-block";
+  modalMenu.style.display = "none";
+}
+window.onclick = function(event) {
+  if (event.target == submodalone) {
+    submodalone.style.display = "none";
+  }
+}
+subcloseone.onclick = function() {
+  submodalone.style.display = "none";
+  modalMenu.style.display = "inline-block";
 }
 
+
+//SUBMENU TWO TRIGGERS
 function submenutwo() {
-  subone.style.display = "none";
-  subtwo.style.display = "inline-block";
+  submodaltwo.style.display = "inline-block";
+  modalMenu.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == submodaltwo) {
+    submodaltwo.style.display = "none";
+  }
+}
+subclosetwo.onclick = function() {
+  submodaltwo.style.display = "none";
+  modalMenu.style.display = "inline-block";
 }
