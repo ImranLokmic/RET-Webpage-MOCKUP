@@ -1,19 +1,19 @@
 //Region Modal Menu functions
-var modal = document.getElementById("myModal");
-var btn = document.getElementById("myBtn");
-var span = document.getElementsByClassName("close")[0];
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-span.onclick = function() {
-  modal.style.display = "none";
-}
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
+var modalRegion = document.getElementById("myModal");
+var btnRegion = document.getElementById("myBtn");
+var closeRegion = document.getElementsByClassName("close")[0];
 
+btnRegion.onclick = function() {
+  modalRegion.style.display = "block";
+}
+closeRegion.onclick = function() {
+  modalRegion.style.display = "none";
+}
+window.addEventListener("click", function(event){
+  if (event.target == modalRegion) {
+    modalRegion.style.display = "none";
+  }
+});
 
 
 
@@ -22,17 +22,18 @@ window.onclick = function(event) {
 var modalMenu = document.getElementById("hamModal");
 var btnMenu = document.getElementById("hamBtn");
 var spanMenu = document.getElementsByClassName("closeMenu")[0];
+
 btnMenu.onclick = function() {
   modalMenu.style.display = "block";
 }
 spanMenu.onclick = function() {
   modalMenu.style.display = "none";
 }
-window.onclick = function(event) {
+window.addEventListener("click", function(event) {
   if (event.target == modalMenu) {
     modalMenu.style.display = "none";
   }
-}
+});
 
 
 
@@ -50,11 +51,12 @@ function submenuone() {
   submodalone.style.display = "inline-block";
   modalMenu.style.display = "none";
 }
-window.onclick = function(event) {
+window.addEventListener("click", function(event) {
   if (event.target == submodalone) {
     submodalone.style.display = "none";
   }
-}
+});
+
 subcloseone.onclick = function() {
   submodalone.style.display = "none";
   modalMenu.style.display = "inline-block";
@@ -67,11 +69,12 @@ function submenutwo() {
   modalMenu.style.display = "none";
 }
 
-window.onclick = function(event) {
+window.addEventListener("click", function(event) {
   if (event.target == submodaltwo) {
     submodaltwo.style.display = "none";
   }
-}
+});
+
 subclosetwo.onclick = function() {
   submodaltwo.style.display = "none";
   modalMenu.style.display = "inline-block";
