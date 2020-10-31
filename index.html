@@ -108,7 +108,7 @@
 
 
 
- <!--Hamburger menu modal trigger-->
+  <!--Hamburger menu modal trigger-->
   <button id="hamBtn" class="hamIcon">
     <i class="fa fa-bars"></i>
   </button>
@@ -126,83 +126,61 @@
 
       <div class="menuicons">
 
-        <div class="menuicon">
+        <div id="modalItemOne" class="menuicon">
           <a href="zdravstveneindikacije.html"><i style="color:red" class="fa fa-medkit" aria-hidden="true"></i></a>
           <div class="menutext">
             <p>Zdravstvene indikacije</p>
           </div>
         </div>
 
-        <hr />
+        <hr class="menuHr" />
 
-        <div class="menuicon">
+        <div id="modalItemTwo" class="menuicon">
           <i style="color:#1da2d8" class="fa fa-globe" aria-hidden="true" onclick="submenuone()"></i>
           <div class="menutext">
             <p>Regije</p>
           </div>
         </div>
 
-        <hr />
+        <div id="submodal-content-one">
+          <p>Zenica</p>
+          <p>Sarajevo</p>
+        </div>
 
-        <div class="menuicon">
+        <hr class="menuHr" />
+
+        <div id="modalItemThree" class="menuicon">
           <a href="prognozavremena.html"><i style="color:#F28C38" class="fa fa-sun-o" aria-hidden="true"></i></a>
           <div class="menutext">
             <p>Vremenska prognoza</p>
           </div>
         </div>
 
-        <hr />
+        <hr class="menuHr" />
 
-        <div class="menuicon">
+        <div id="modalItemFour" class="menuicon">
           <a href="onama.html"><i style="color:#D2B48C" class="fa fa-book" aria-hidden="true"></i></a>
           <div class="menutext">
             <p>O nama</p>
           </div>
         </div>
 
-        <hr />
+        <hr class="menuHr" />
 
-        <div class="menuicon">
+        <div id="modalItemFive" class="menuicon">
           <i style="color:black" class="fa fa-industry" aria-hidden="true" onclick="submenutwo()"></i>
           <div class="menutext">
             <p>Kvalitet zraka</p>
           </div>
+        </div>
 
+        <div id="submodal-content-two">
+          <p>Zagadjenje #1</p>
+          <p>Zagadjenje #2</p>
         </div>
 
       </div>
 
-    </div>
-
-  </div>
-
-
-
-
-
-
-  <!--Submenu Modal 1-->
-  <div id="subModalOne" class="submodal">
-
-    <div class="submodal-content">
-      <span id="subCloseOne" class="closesub">&#8249;</span>
-      <p>Zenica</p>
-      <p>Sarajevo</p>
-    </div>
-
-  </div>
-
-
-
-
-
-  <!--Submenu Modal 2-->
-  <div id="subModalTwo" class="submodal">
-
-    <div class="submodal-content">
-      <span id="subCloseTwo" class="closesub">&#8249;</span>
-      <p>Zagadjenje #1</p>
-      <p>Zagadjenje #2</p>
     </div>
 
   </div>
