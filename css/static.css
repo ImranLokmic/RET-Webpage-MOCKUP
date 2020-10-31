@@ -13,11 +13,6 @@ body {
   }
 }
 
-
-
-
-
-
 /*TOPBAR*/
 .topbar {
   height: 40px;
@@ -54,18 +49,12 @@ body {
   text-decoration: none;
 }
 
-.language a:hover{
+.language a:hover {
   background-color: #c3c3c3;
   color: #ececec;
 }
 
-
 /*TOPBAR - MEDIA QUERIES*/
-
-
-
-
-
 /*REGIONS*/
 .regions {
   display: none;
@@ -182,7 +171,6 @@ body {
   margin-right: auto;
   display: block;
 }
-
 
 /*REGIONS - MEDIA QUERIES*/
 @media only screen and (max-width:800px) {
@@ -301,18 +289,14 @@ body {
   }
 }
 
-
-
-
-
 /*MAINBAR*/
-#horiznav{
+#horiznav {
   box-shadow: 0px 3px 6px rgb(96, 129, 99);
-  background: rgb(76,175,80);
-  background: -moz-linear-gradient(0deg, rgba(76,175,80,1) 0%, rgba(76,175,80,1) 84%, rgba(129,156,129,1) 100%);
-  background: -webkit-linear-gradient(0deg, rgba(76,175,80,1) 0%, rgba(76,175,80,1) 84%, rgba(129,156,129,1) 100%);
-  background: linear-gradient(0deg, rgba(76,175,80,1) 0%, rgba(76,175,80,1) 84%, rgba(129,156,129,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4caf50",endColorstr="#819c81",GradientType=1);
+  background: rgb(76, 175, 80);
+  background: -moz-linear-gradient(0deg, rgba(76, 175, 80, 1) 0%, rgba(76, 175, 80, 1) 84%, rgba(129, 156, 129, 1) 100%);
+  background: -webkit-linear-gradient(0deg, rgba(76, 175, 80, 1) 0%, rgba(76, 175, 80, 1) 84%, rgba(129, 156, 129, 1) 100%);
+  background: linear-gradient(0deg, rgba(76, 175, 80, 1) 0%, rgba(76, 175, 80, 1) 84%, rgba(129, 156, 129, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4caf50", endColorstr="#819c81", GradientType=1);
 }
 
 ul#horiznav, #horiznav ul {
@@ -338,22 +322,22 @@ ul#horiznav, #horiznav ul {
 }
 
 #horiznav li a:hover {
-  color: rgb(76,175,80);
-  background: rgb(87,87,102);
+  color: rgb(76, 175, 80);
+  background: rgb(87, 87, 102);
 }
 
-#submenu{
+#submenu {
   display: none;
   position: absolute;
   width: 100%;
 }
 
-#submenu li{
-  background: rgb(87,87,102);
+#submenu li {
+  background: rgb(87, 87, 102);
 }
 
 #horiznav li:hover #submenu {
- display:block;
+  display: block;
 }
 
 #submenu li {
@@ -365,9 +349,9 @@ ul#horiznav, #horiznav ul {
   border: 0px 0px 0px 1px white;
 }
 
-#submenu li a:hover #horiznav{
-  color: rgb(76,175,80);
-  background: rgb(87,87,102);
+#submenu li a:hover #horiznav {
+  color: rgb(76, 175, 80);
+  background: rgb(87, 87, 102);
 }
 
 #hr hr {
@@ -389,7 +373,6 @@ ul#horiznav, #horiznav ul {
   border: 0;
 }
 
-
 /*MAINBAR - MEDIA QUERIES*/
 @media only screen and (max-width:1000px) {
   #horiznav {
@@ -408,11 +391,6 @@ ul#horiznav, #horiznav ul {
     background-color: white;
   }
 }
-
-
-
-
-
 
 /*MENU MODAL*/
 .menuModal {
@@ -469,19 +447,17 @@ ul#horiznav, #horiznav ul {
   vertical-align: middle;
 }
 
-#submodal-content-one{
+#submodal-content-one {
   display: block;
   position: absolute;
   opacity: 0;
 }
 
-#submodal-content-two{
+#submodal-content-two {
   display: block;
   position: absolute;
   opacity: 0;
 }
-
-
 
 /*MENU MODAL - MEDIA QUERIES*/
 @media only screen and (max-width:400px) {
