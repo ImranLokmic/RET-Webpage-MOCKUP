@@ -77,6 +77,7 @@ submenuitemfour.onmouseout = function() {
 var modalMenu = document.getElementById("hamModal");
 var btnMenu = document.getElementById("hamBtn");
 var spanMenu = document.getElementsByClassName("closeMenu")[0];
+var backMenu = document.getElementsByClassName("backMenu")[0];
 var menuIconOne = document.getElementById("modalItemOne");
 var menuIconTwo = document.getElementById("modalItemTwo");
 var menuIconThree = document.getElementById("modalItemThree");
@@ -86,6 +87,7 @@ var hr = document.getElementsByClassName("menuHr");
 
 btnMenu.onclick = function() {
   modalMenu.style.display = "block";
+  backMenu.style.display = "none";
 
   menuIconOne.style.transform = "translate(0,0)";
   menuIconOne.style.opacity = "1";
@@ -132,6 +134,50 @@ var subtwo = document.getElementById("submodal-content-two");
 
 //SUBMENU ONE TRIGGERS
 function submenuone() {
+
+  backMenu.style.display = "block";
+
+  backMenu.onclick = function() {
+
+    backMenu.style.display = "none";
+    modalMenu.style.display = "block";
+
+    menuIconOne.style.transform = "translate(0,0)";
+    menuIconOne.style.opacity = "1";
+
+    menuIconTwo.style.transform = "translate(0,0)";
+    menuIconTwo.style.opacity = "1";
+
+    subone.style.transition = "opacity 0s"
+    subone.style.opacity = "0";
+
+    menuIconThree.style.transform = "translate(0,0)";
+    menuIconThree.style.opacity = "1";
+
+    menuIconFour.style.transform = "translate(0,0)";
+    menuIconFour.style.opacity = "1";
+
+    menuIconFive.style.transform = "translate(0,0)";
+    menuIconFive.style.opacity = "1";
+
+    subtwo.style.opacity = "0";
+    subtwo.style.transform = "translate(0px,0px)"
+
+    for (var i = 0; i < hr.length; i++) {
+      hr[i].style.transform = "translate(0,0)";
+      hr[i].style.opacity = "1";
+    }
+  }
+  spanMenu.onclick = function() {
+    modalMenu.style.display = "none";
+  }
+  window.addEventListener("click", function(event) {
+    if (event.target == modalMenu) {
+      modalMenu.style.display = "none";
+    }
+  });
+
+
   //submodalone.style.display = "inline-block";
   menuIconOne.style.transform = "translate(0,-300px)";
   menuIconOne.style.opacity = "0";
@@ -169,6 +215,49 @@ function submenuone() {
 }
 
 function submenutwo() {
+
+  backMenu.style.display = "block";
+
+  backMenu.onclick = function() {
+
+    backMenu.style.display = "none";
+    modalMenu.style.display = "block";
+
+    menuIconOne.style.transform = "translate(0,0)";
+    menuIconOne.style.opacity = "1";
+
+    menuIconTwo.style.transform = "translate(0,0)";
+    menuIconTwo.style.opacity = "1";
+
+    subone.style.opacity = "0";
+
+    menuIconThree.style.transform = "translate(0,0)";
+    menuIconThree.style.opacity = "1";
+
+    menuIconFour.style.transform = "translate(0,0)";
+    menuIconFour.style.opacity = "1";
+
+    menuIconFive.style.transform = "translate(0,0)";
+    menuIconFive.style.opacity = "1";
+
+    subtwo.style.transition = "opacity 0s"
+    subtwo.style.opacity = "0";
+    subtwo.style.transform = "translate(0px,0px)"
+
+    for (var i = 0; i < hr.length; i++) {
+      hr[i].style.transform = "translate(0,0)";
+      hr[i].style.opacity = "1";
+    }
+  }
+  spanMenu.onclick = function() {
+    modalMenu.style.display = "none";
+  }
+  window.addEventListener("click", function(event) {
+    if (event.target == modalMenu) {
+      modalMenu.style.display = "none";
+    }
+  });
+
   //submodalone.style.display = "inline-block";
   menuIconOne.style.transform = "translate(0,-300px)";
   menuIconOne.style.opacity = "0";

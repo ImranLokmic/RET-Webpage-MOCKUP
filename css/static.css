@@ -415,17 +415,40 @@ ul#horiznav, #horiznav ul {
 }
 
 .closeMenu {
+  background-color: white;
   color: black;
-  position: relative;
-  float: right;
-  right: 5px;
-  font-size: 28px;
+  padding: 0 4 0 4;
+  position: absolute;
+  top:2%;
+  right:2%;
+  font-size: 35px;
   font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
+.closeMenu:hover,
+.closeMenu:focus {
+  background-color: gray;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.backMenu {
+  display:none;
+  background-color: white;
   color: black;
+  padding: 0 4 0 4;
+  position: absolute;
+  top:2%;
+  left:2%;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.backMenu:hover,
+.backMenu:focus {
+  background-color: gray;
+  color: white;
   text-decoration: none;
   cursor: pointer;
 }
