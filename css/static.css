@@ -317,23 +317,23 @@ ul#horiznav, #horiznav ul {
   width: 100%;
   line-height: 50px;
   text-align: center;
-  color: white;
   text-decoration: none;
-}
-
-#horiznav li a:hover {
-  color: rgb(76, 175, 80);
-  background: rgb(87, 87, 102);
+  color:white;
 }
 
 #submenu {
   display: none;
   position: absolute;
   width: 100%;
+  margin-top: 0px!important;
 }
 
 #submenu li {
-  background: rgb(87, 87, 102);
+  background: white;
+  box-shadow: 0px 3px 6px rgb(96, 129, 99);
+}
+#submenu li a{
+  color:rgb(76, 175, 80);
 }
 
 #horiznav li:hover #submenu {
@@ -349,10 +349,6 @@ ul#horiznav, #horiznav ul {
   border: 0px 0px 0px 1px white;
 }
 
-#submenu li a:hover #horiznav {
-  color: rgb(76, 175, 80);
-  background: rgb(87, 87, 102);
-}
 
 #hr hr {
   background-color: #4CAF50;
@@ -474,12 +470,49 @@ ul#horiznav, #horiznav ul {
   display: block;
   position: absolute;
   opacity: 0;
+  width: 80%;
+}
+
+.submodal-items{
+  padding: 50 0 50 0;
+  font-size: 40px;
+  color: white;
+  text-align: center;
+}
+
+#submodal-content-first{
+  background-color: rgb(47, 122, 133);
+  border-radius:20px;
+}
+
+#submodal-content-second{
+  background-color: rgb(47, 122, 133);
+  border-radius:20px;
 }
 
 #submodal-content-two {
   display: block;
   position: absolute;
   opacity: 0;
+  width: 80%;
+}
+
+#submodal-second-content-first{
+  background: rgb(0,0,0);
+background: -moz-linear-gradient(135deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 41%, rgba(255,255,255,1) 100%);
+background: -webkit-linear-gradient(135deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 41%, rgba(255,255,255,1) 100%);
+background: linear-gradient(135deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 41%, rgba(255,255,255,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#ffffff",GradientType=1);
+  border-radius:20px;
+}
+
+#submodal-second-content-second{
+  background: rgb(0,0,0);
+background: -moz-linear-gradient(135deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 41%, rgba(255,255,255,1) 100%);
+background: -webkit-linear-gradient(135deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 41%, rgba(255,255,255,1) 100%);
+background: linear-gradient(135deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 41%, rgba(255,255,255,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#ffffff",GradientType=1);
+  border-radius:20px;
 }
 
 /*MENU MODAL - MEDIA QUERIES*/

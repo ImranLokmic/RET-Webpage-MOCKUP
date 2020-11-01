@@ -16,9 +16,6 @@ window.addEventListener("click", function(event) {
 });
 
 
-
-
-
 //Main menu dropdown colorchagers vars
 var mainmenu = document.getElementById("horiznav");
 var submenuitemone = document.getElementById("subitemone");
@@ -26,54 +23,8 @@ var submenuitemtwo = document.getElementById("subitemtwo");
 var submenuitemthree = document.getElementById("subitemthree");
 var submenuitemfour = document.getElementById("subitemfour");
 
-//Triggers
-submenuitemone.onmouseover = function() {
-  mainmenu.style.background = "rgb(87,87,102)";
-  mainmenu.style.color = "rgb(76,175,80)";
-};
-submenuitemone.onmouseout = function() {
-  mainmenu.style.background = "rgb(76,175,80)";
-  mainmenu.style.background = "-moz-linear-gradient(0deg, rgba(76,175,80,1) 0%, rgba(76,175,80,1) 84%, rgba(129,156,129,1) 100%)"
-  mainmenu.style.background = "-webkit-linear-gradient(0deg, rgba(76,175,80,1) 0%, rgba(76,175,80,1) 84%, rgba(129,156,129,1) 100%)"
-  mainmenu.style.background = "linear-gradient(0deg, rgba(76,175,80,1) 0%, rgba(76,175,80,1) 84%, rgba(129,156,129,1) 100%)";
-}
 
-submenuitemtwo.onmouseover = function() {
-  mainmenu.style.background = "rgb(87,87,102)";
-  mainmenu.style.color = "rgb(76,175,80)";
-};
-submenuitemtwo.onmouseout = function() {
-  mainmenu.style.background = "rgb(76,175,80)";
-  mainmenu.style.background = "-moz-linear-gradient(0deg, rgba(76,175,80,1) 0%, rgba(76,175,80,1) 84%, rgba(129,156,129,1) 100%)"
-  mainmenu.style.background = "-webkit-linear-gradient(0deg, rgba(76,175,80,1) 0%, rgba(76,175,80,1) 84%, rgba(129,156,129,1) 100%)"
-  mainmenu.style.background = "linear-gradient(0deg, rgba(76,175,80,1) 0%, rgba(76,175,80,1) 84%, rgba(129,156,129,1) 100%)";
-}
-
-submenuitemthree.onmouseover = function() {
-  mainmenu.style.background = "rgb(87,87,102)";
-  mainmenu.style.color = "rgb(76,175,80)";
-};
-submenuitemthree.onmouseout = function() {
-  mainmenu.style.background = "rgb(76,175,80)";
-  mainmenu.style.background = "-moz-linear-gradient(0deg, rgba(76,175,80,1) 0%, rgba(76,175,80,1) 84%, rgba(129,156,129,1) 100%)"
-  mainmenu.style.background = "-webkit-linear-gradient(0deg, rgba(76,175,80,1) 0%, rgba(76,175,80,1) 84%, rgba(129,156,129,1) 100%)"
-  mainmenu.style.background = "linear-gradient(0deg, rgba(76,175,80,1) 0%, rgba(76,175,80,1) 84%, rgba(129,156,129,1) 100%)";
-}
-
-submenuitemfour.onmouseover = function() {
-  mainmenu.style.background = "rgb(87,87,102)";
-  mainmenu.style.color = "rgb(76,175,80)";
-};
-submenuitemfour.onmouseout = function() {
-  mainmenu.style.background = "rgb(76,175,80)";
-  mainmenu.style.background = "-moz-linear-gradient(0deg, rgba(76,175,80,1) 0%, rgba(76,175,80,1) 84%, rgba(129,156,129,1) 100%)"
-  mainmenu.style.background = "-webkit-linear-gradient(0deg, rgba(76,175,80,1) 0%, rgba(76,175,80,1) 84%, rgba(129,156,129,1) 100%)"
-  mainmenu.style.background = "linear-gradient(0deg, rgba(76,175,80,1) 0%, rgba(76,175,80,1) 84%, rgba(129,156,129,1) 100%)";
-}
-
-
-
-//Main menu Modal functions
+//Main menu Modal Vars MOBILE
 var modalMenu = document.getElementById("hamModal");
 var btnMenu = document.getElementById("hamBtn");
 var spanMenu = document.getElementsByClassName("closeMenu")[0];
@@ -84,6 +35,9 @@ var menuIconThree = document.getElementById("modalItemThree");
 var menuIconFour = document.getElementById("modalItemFour");
 var menuIconFive = document.getElementById("modalItemFive");
 var hr = document.getElementsByClassName("menuHr");
+
+
+//Modal Opening triggers MOBILE
 
 btnMenu.onclick = function() {
   modalMenu.style.display = "block";
@@ -125,18 +79,17 @@ window.addEventListener("click", function(event) {
 
 
 
-
-
-//SUBMENU VARS
+//SUBMENU VARS MOBILE
 var subone = document.getElementById("submodal-content-one");
 var subtwo = document.getElementById("submodal-content-two");
 
 
-//SUBMENU ONE TRIGGERS
+//SUBMENU ONE TRIGGERS MOBILE
 function submenuone() {
 
   backMenu.style.display = "block";
 
+     // BACK BUTTON ANIMATION RESET
   backMenu.onclick = function() {
 
     backMenu.style.display = "none";
@@ -148,6 +101,7 @@ function submenuone() {
     menuIconTwo.style.transform = "translate(0,0)";
     menuIconTwo.style.opacity = "1";
 
+    subone.style.transform = "translate(-1000px,0)"
     subone.style.transition = "opacity 0s"
     subone.style.opacity = "0";
 
@@ -167,6 +121,7 @@ function submenuone() {
       hr[i].style.transform = "translate(0,0)";
       hr[i].style.opacity = "1";
     }
+
   }
   spanMenu.onclick = function() {
     modalMenu.style.display = "none";
@@ -178,7 +133,7 @@ function submenuone() {
   });
 
 
-  //submodalone.style.display = "inline-block";
+  //Animations
   menuIconOne.style.transform = "translate(0,-300px)";
   menuIconOne.style.opacity = "0";
   menuIconOne.style.transition = "transform ease-in,transform 2s, opacity 3s";
@@ -209,8 +164,10 @@ function submenuone() {
     hr[i].style.transition = "transform ease-in,transform 2s, opacity 3s";
   }
 
+
+  subone.style.transform = "translate(0px,-130px)"
   subone.style.opacity = "1";
-  subone.style.transition = "opacity 4s";
+  subone.style.transition = "transform ease-in,transform 0s,opacity 4s";
 
 }
 
@@ -218,6 +175,7 @@ function submenutwo() {
 
   backMenu.style.display = "block";
 
+  //Back button animation reset
   backMenu.onclick = function() {
 
     backMenu.style.display = "none";
@@ -248,6 +206,8 @@ function submenutwo() {
       hr[i].style.transform = "translate(0,0)";
       hr[i].style.opacity = "1";
     }
+
+
   }
   spanMenu.onclick = function() {
     modalMenu.style.display = "none";
@@ -258,7 +218,6 @@ function submenutwo() {
     }
   });
 
-  //submodalone.style.display = "inline-block";
   menuIconOne.style.transform = "translate(0,-300px)";
   menuIconOne.style.opacity = "0";
   menuIconOne.style.transition = "transform ease-in,transform 2s, opacity 3s";
@@ -288,6 +247,7 @@ function submenutwo() {
     hr[i].style.opacity = "0";
     hr[i].style.transition = "transform ease-in,transform 2s, opacity 3s";
   }
+
 
   subtwo.style.transform = "translate(0px,-430px)"
   subtwo.style.opacity = "1";
