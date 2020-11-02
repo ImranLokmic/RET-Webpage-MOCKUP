@@ -1,19 +1,33 @@
-//Region Modal Menu functions
-var modalRegion = document.getElementById("myModal");
+/*
+** //Region Modal Menu functions
+** var modalRegion = document.getElementById("myModal");
+** var btnRegion = document.getElementById("myBtn");
+** var closeRegion = document.getElementsByClassName("close")[0];
+**
+** btnRegion.onclick = function() {
+**   modalRegion.style.display = "block";
+** }
+** closeRegion.onclick = function() {
+**   modalRegion.style.display = "none";
+** }
+** window.addEventListener("click", function(event) {
+**   if (event.target == modalRegion) {
+**     modalRegion.style.display = "none";
+**   }
+** });
+*/
+
 var btnRegion = document.getElementById("myBtn");
-var closeRegion = document.getElementsByClassName("close")[0];
+var region = document.getElementsByClassName("region-idea")[0];
 
 btnRegion.onclick = function() {
-  modalRegion.style.display = "block";
-}
-closeRegion.onclick = function() {
-  modalRegion.style.display = "none";
-}
-window.addEventListener("click", function(event) {
-  if (event.target == modalRegion) {
-    modalRegion.style.display = "none";
+  if(region.style.display == "inline-block"){
+   region.style.display = "none";
   }
-});
+  else {
+    region.style.display = "inline-block"
+  }
+ }
 
 
 //Main menu dropdown colorchagers vars
