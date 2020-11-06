@@ -36,58 +36,12 @@
   </div>
 
 
-
-
-
-  <!--Regions-->
-  <!--
-  <div id="myModal" class="regions">
-
-    <span class="close">&times;</span>
-
-    <div class="regions-content">
-
-      <div id="verticalLine"></div>
-
-      <div id="horizontalLine"></div>
-
-      <div id="bosniapic">
-        <img src="pageimg/bosniare.png">
-      </div>
-
-      <div id="serbiapic">
-        <img src="pageimg/serbiare.png">
-      </div>
-
-      <div id="croatiapic">
-        <img src="pageimg/croatiare.png">
-      </div>
-
-      <div id="montenegropic">
-        <img src="pageimg/montenegrore.png">
-      </div>
-
-    </div>
-
-  </div>
-
-  </div>
--->
-
-
-
-
-
   <!--Logo-->
   <div class="logo">
 
     <a href=""><img src="" height="80" width="80"></img></a>
 
   </div>
-
-
-
-
 
   <!--Mainbar-->
   <ul id="horiznav">
@@ -134,6 +88,8 @@
 
       <span class="closeMenu">&times;</span>
 
+      <span class="backMenu">&#x25c0;</span>
+
       <div class="menuicons">
 
         <div id="modalItemOne" class="menuicon">
@@ -148,13 +104,17 @@
         <div id="modalItemTwo" class="menuicon">
           <i style="color:#1da2d8" class="fa fa-globe" aria-hidden="true" onclick="submenuone()"></i>
           <div class="menutext">
-            <p>Regije</p>
+            <p>Lokacije</p>
           </div>
         </div>
 
         <div id="submodal-content-one">
-          <p>Zenica</p>
-          <p>Sarajevo</p>
+          <div id="submodal-content-first">
+            <p class="submodal-items">Zenica</p>
+          </div>
+          <div id="submodal-content-second">
+            <p class="submodal-items">Sarajevo</p>
+          </div>
         </div>
 
         <hr class="menuHr" />
@@ -185,8 +145,12 @@
         </div>
 
         <div id="submodal-content-two">
-          <p>Zagadjenje #1</p>
-          <p>Zagadjenje #2</p>
+          <div id="submodal-second-content-first">
+            <p class="submodal-items">Zagadjenje #1</p>
+          </div>
+          <div id="submodal-second-content-second">
+            <p class="submodal-items">Zagadjenje #2</p>
+          </div>
         </div>
 
       </div>
@@ -198,17 +162,27 @@
 
 
 
-
   <!--Content-->
   <div class="vremenskimeni">
     <i style="color:#F28C38" class="fa fa-sun-o" aria-hidden="true"></i>
     <span>Vremenska prognoza</span>
   </div>
+
   <div class="vrijeme">
-    <a id="zenicavrijeme" class="weatherwidget-io" href="https://forecast7.com/hr/44d2017d91/zenica/" data-label_1="ZENICA" data-label_2="VRIJEME" data-theme="sky">ZENICA VRIJEME</a>
-    <a id="sarajevovrijeme" class="weatherwidget-io" href="https://forecast7.com/hr/43d8618d41/sarajevo/" data-label_1="SARAJEVO" data-label_2="VRIJEME" data-theme="sky">SARAJEVO VRIJEME</a>
-    <a id="tuzlavrijeme" class="weatherwidget-io" href="https://forecast7.com/hr/44d5418d67/tuzla/" data-label_1="TUZLA" data-label_2="VRIJEME" data-theme="sky">TUZLA VRIJEME</a>
+
+    <a class="weatherwidget-io" href="https://forecast7.com/hr/44d7717d19/banja-luka/" data-label_1="BANJA LUKA" data-label_2="Vrijeme" data-theme="weather_one" >BANJA LUKA Vrijeme</a>
+    <a class="weatherwidget-io" href="https://forecast7.com/hr/44d7619d22/bijeljina/" data-label_1="BIJELJINA" data-label_2="Vrijeme" data-theme="weather_one" >BIJELJINA Vrijeme</a>
+    <a class="weatherwidget-io" href="https://forecast7.com/hr/44d7318d08/doboj/" data-label_1="DOBOJ" data-label_2="Vrijeme" data-theme="weather_one" >DOBOJ Vrijeme</a>
+    <a class="weatherwidget-io" href="https://forecast7.com/hr/43d3417d81/mostar/" data-label_1="MOSTAR" data-label_2="Vrijeme" data-theme="weather_one" >MOSTAR Vrijeme</a>
+    <a class="weatherwidget-io" href="https://forecast7.com/hr/44d9816d71/prijedor/" data-label_1="PRIJEDOR" data-label_2="Vrijeme" data-theme="weather_one" >PRIJEDOR Vrijeme</a>
+    <a class="weatherwidget-io" href="https://forecast7.com/hr/43d8618d41/sarajevo/" data-label_1="SARAJEVO" data-label_2="Vrijeme" data-theme="weather_one" >SARAJEVO Vrijeme</a>
+    <a class="weatherwidget-io" href="https://forecast7.com/hr/44d5418d67/tuzla/" data-label_1="TUZLA" data-label_2="Vrijeme" data-theme="weather_one" >TUZLA Vrijeme</a>
+    <a class="weatherwidget-io" href="https://forecast7.com/hr/44d2017d91/zenica/" data-label_1="ZENICA" data-label_2="Vrijeme" data-theme="weather_one" >ZENICA Vrijeme</a>
+
   </div>
+
+
+
 </body>
 <script type="text/javascript" src="scripts\static.js"></script>
 <script type="text/javascript" src="scripts\vremenska.js"></script>
